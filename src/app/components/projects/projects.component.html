@@ -1,0 +1,70 @@
+<section class="projects">
+  <ol class="project-list">
+    <li *ngFor="let project of projects" class="project">
+      <div class="project__container">
+        <div class="project__background"></div>
+        <div class="project__details">
+          <h3
+            class="project__title"
+            style="margin-top: 0px; margin-bottom: 0px"
+          >
+            <a
+              [href]="project.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="project.title + ' (opens in a new tab)'"
+              class="project__link"
+            >
+              {{ project.title }}
+              <span class="project__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </h3>
+          <p class="project__description">{{ project.description }}</p>
+        </div>
+        <img [src]="project.image" [alt]="project.alt" class="project__image" />
+      </div>
+    </li>
+  </ol>
+
+  <div _ngcontent-ng-c1279883322="" class="resume-link">
+    <a
+      _ngcontent-ng-c1279883322=""
+      href=""
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="View Full Résumé (opens in a new tab)"
+      class="resume-link__anchor"
+      ><span _ngcontent-ng-c1279883322="">
+        View Full
+        <span _ngcontent-ng-c1279883322="" class="resume-link__text">
+          Project Archive
+          <svg
+            _ngcontent-ng-c1279883322=""
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+            class="resume-link__icon"
+          >
+            <path
+              _ngcontent-ng-c1279883322=""
+              fill-rule="evenodd"
+              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+              clip-rule="evenodd"
+            ></path></svg></span></span
+    ></a>
+  </div>
+</section>

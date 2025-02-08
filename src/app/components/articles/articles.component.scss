@@ -1,0 +1,83 @@
+.article-list {
+  color: #94a3b8;
+  padding-left: 0;
+  margin: 0;
+
+  .article {
+    list-style: none;
+    margin-bottom: 48px;
+
+    &__container {
+      display: grid;
+      gap: 16px;
+      padding-bottom: 4px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      grid-template-columns: repeat(8, 1fr);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &__image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid rgba(148, 163, 184, 0.1);
+      transition: border 0.3s ease;
+      grid-column: span 2;
+
+      &:hover {
+        border-color: rgba(148, 163, 184, 0.3);
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      order: 2;
+
+      grid-column: span 6;
+
+      &__year {
+        font-size: 14px;
+        font-weight: 600;
+        color: #64748b;
+        margin: 0;
+      }
+
+      &__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+
+        &__link {
+          color: #e2e8f0;
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover,
+          &:focus {
+            color: #14b8a6;
+          }
+        }
+      }
+
+      &__icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 4px;
+        transform: translateY(1px);
+        transition: transform 0.3s ease;
+
+        .article__link:hover &,
+        .article__link:focus & {
+          transform: translate(-1px, -1px);
+        }
+      }
+    }
+  }
+}

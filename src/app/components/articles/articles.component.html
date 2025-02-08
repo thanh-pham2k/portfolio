@@ -1,0 +1,48 @@
+<section class="articles">
+  <ol class="article-list">
+    <li *ngFor="let article of articles" class="article">
+      <div class="article__container">
+        <img [src]="article.image" [alt]="article.alt" class="article__image" />
+        <div class="article__details">
+          <p class="article__year" style="margin: 0px">{{ article.year }}</p>
+          <h3 class="article__title" style="margin: 0px">
+            <a
+              [href]="article.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="article.title + ' (opens in a new tab)'"
+              class="article__link"
+            >
+              {{ article.title }}
+              <span class="article__icon">
+                <svg
+                  _ngcontent-ng-c1279883322=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="resume-link__icon"
+                >
+                  <path
+                    _ngcontent-ng-c1279883322=""
+                    fill-rule="evenodd"
+                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </h3>
+        </div>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<footer style="color: #94a3b8">
+  <p>
+    Loosely designed in Figma and coded in Visual Studio Code by yours truly.
+    Built with Next.js and Tailwind CSS, deployed with Vercel. All text is set
+    in the Inter typeface.
+  </p>
+</footer>

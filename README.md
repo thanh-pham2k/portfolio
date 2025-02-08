@@ -1,61 +1,77 @@
-# Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+---
 
-## Development server
+# **Portfolio - Thanh Pham**
 
-To start a local development server, run:
+A responsive portfolio website showcasing my journey as a **Fullstack Developer**, focusing on building scalable web applications with **modern front-end tools**.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## **Key Features**
 
-## Code scaffolding
+- **Dynamic Experience Timeline**: Showcases work experience and technologies used.
+- **Projects Section**: Highlights key projects with descriptions and links.
+- **Responsive Design**: Ensures seamless usage across all devices.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## **Technologies Used**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Angular**: For component-based UI development.
+- **SCSS**: Clean, responsive styling.
+- **TypeScript**: For scalable and maintainable code.
+- **Vercel**: For seamless deployment and hosting.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## **Portfolio Highlights**
 
-To build the project run:
+1. **Experience**:
+   - **Developer** at LEAP LLC: Built full-stack web applications.
+   - **AI Engineer Intern** at MiTek: Developed AI-based tools.
+2. **Projects**:
+   - **Build a Spotify Connected App**: A video course on building Spotify apps.
+   - **Halcyon Theme**: A VS Code theme with 100k+ installs.
+3. **Articles**: Insights and technical contributions.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## **Live Demo**
 
-## Running unit tests
+[**View Portfolio**](https://your-portfolio-link.com)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## **Connect with Me**
 
-## Running end-to-end tests
+- **LinkedIn**: [linkedin.com/in/thanh-pham](https://www.linkedin.com/in/thanh-pham-bb9022139/)
+- **GitHub**: [github.com/thanh-pham2k](https://github.com/thanh-pham2k)
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## **Setup Instructions**
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/thanh-pham2k/portfolio.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the project:
+   ```bash
+   ng serve
+   ```
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# portfolio
-# portfolio
+### **Future Improvements**
+
+- [ ] **Dark Mode**: Add a toggle feature for light and dark themes.
+- [ ] **Search Functionality**: Implement search for easier project and article navigation.
+- [ ] **Interactive Animations**: Enhance user engagement with subtle animations.
+- [ ] **CMS Integration**: Use a headless CMS for dynamic content updates.
+- [ ] **Localization**: Support multiple languages for a broader audience.
+- [ ] **Performance Optimization**: Further optimize loading speeds for mobile and desktop.
+- [ ] **Customizable Themes**: Allow users to customize colors and layouts.

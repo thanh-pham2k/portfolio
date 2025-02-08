@@ -1,0 +1,74 @@
+<section id="experience" style="color: white">
+  <ol style="padding-left: 0px">
+    <li *ngFor="let experience of experiences" class="experience-item">
+      <div class="experience-item__container">
+        <div class="experience-item__background"></div>
+        <header class="experience-item__timeline">
+          {{ experience.timeline }}
+        </header>
+        <div class="experience-item__details">
+          <h3 class="experience-item__title">
+            <a
+              [href]="experience.link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              {{ experience.title }} ·
+              <span class="experience-item__company">{{
+                experience.company
+              }}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="experience-item__icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </h3>
+          <p class="experience-item__description">
+            {{ experience.description }}
+          </p>
+          <ul class="experience-item__technologies">
+            <li *ngFor="let tech of experience.technologies">{{ tech }}</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <div class="resume-link">
+    <a
+      href=""
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="View Full Résumé (opens in a new tab)"
+      class="resume-link__anchor"
+    >
+      <span>
+        View Full
+        <span class="resume-link__text">
+          Résumé
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+            class="resume-link__icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </span>
+    </a>
+  </div>
+</section>
