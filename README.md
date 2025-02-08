@@ -39,6 +39,7 @@ A responsive portfolio website showcasing my journey as a **Fullstack Developer*
 ## **Live Demo**
 
 [**View Portfolio**](https://your-portfolio-link.com)
+![image](https://github.com/user-attachments/assets/c546ebf3-facd-4462-a734-60c661a5c605)
 
 ---
 
